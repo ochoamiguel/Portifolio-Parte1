@@ -31,13 +31,13 @@ header {
 }
 
 nav {
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%; 
-  background-color: rgba(31, 31, 31, 0.8); 
-  z-index: 1000; 
-  padding: 25px 20px; 
+  width: 100%;
+  background-color: rgba(31, 31, 31, 0.8);
+  z-index: 1000;
+  padding: 25px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +45,6 @@ nav {
   padding-right: 200px;
   backdrop-filter: blur(10px);
 }
-
 
 .logo {
   font-size: 20px;
@@ -57,7 +56,7 @@ nav {
   padding-left: 300px;
 }
 
-.logo:hover{
+.logo:hover {
   scale: 1.1;
   transition: 0.8s;
 }
@@ -82,10 +81,9 @@ nav {
 
 .nav-menu a:hover {
   color: #64b5f6;
-  
 }
 
-/* Main Content */
+/* Main */
 main {
   display: flex;
   padding-top: 80px;
@@ -125,15 +123,18 @@ main {
 }
 
 .btn {
-  padding: 20px 30px;
+  padding: 15px;
   border-radius: 20px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  width: 220px;
+  text-align: center;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -146,6 +147,7 @@ main {
   );
   color: white;
   border: none;
+ 
 }
 
 .btn-primary:hover {
@@ -157,6 +159,7 @@ main {
   background: transparent;
   color: #aa71e8;
   border: 2px solid #aa71e8;
+  
 }
 
 .btn-secondary:hover {
@@ -168,14 +171,12 @@ main {
 }
 
 .buttons a svg {
-  vertical-align: middle; 
-  margin-right: 8px; 
-  width: 40px; 
-  height: 40px; 
-  fill: currentColor; 
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
 }
-
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -209,35 +210,32 @@ main {
   }
 }
 
-/*        SEÇÃO SOBRE         */
+/*        SOBRE         */
 
 #sobre {
   height: 100vh;
   width: 100%;
   padding: 4rem 2rem;
   background-image: url("./images/Projetos\ \(1\).png");
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
-  flex-direction:column;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
- 
- 
 }
 
 .sobre-container {
   width: 100%;
   margin: 0 auto;
-  
 }
 
 .sobre-page-title {
   font-size: 3rem;
   font-weight: 700;
-  text-align: center;;
+  text-align: center;
   background: linear-gradient(135deg, #64b5f6 0%, #bb86fc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -312,11 +310,10 @@ main {
 .sobre-btn-curriculum-svg {
   width: 30px;
   height: 30px;
-  
 }
 
 .sobre-education-section {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(44, 44, 46, 0.5);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -345,7 +342,6 @@ main {
   margin-bottom: 0;
 }
 
-
 .sobre-education-text {
   font-size: 18px;
   line-height: 1.4;
@@ -359,22 +355,21 @@ main {
 }
 
 .sobre-icon {
-  color: #9F5BE9;
-  width: 32px; 
+  color: #9f5be9;
+  width: 32px;
   height: 32px;
   margin-left: 20px;
 }
 
 /* Lado direito */
 .sobre-right-section {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(44, 44, 46, 0.5);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   margin-top: 80px;
-  
 }
 
 .sobre-intro-text {
@@ -412,14 +407,14 @@ main {
 }
 
 .sobre-icon-right {
-  color: #9F5BE9;
-  width: 32px; 
+  color: #9f5be9;
+  width: 32px;
   height: 32px;
 }
-.sobre-icon-right-s{
-   color: #9F5BE9;
-   width: 64px;
-   height: 64px;
+.sobre-icon-right-s {
+  color: #9f5be9;
+  width: 64px;
+  height: 64px;
 }
 
 .sobre-info-text {
@@ -501,20 +496,19 @@ main {
   }
 }
 
-
 /*        Habilidades         */
 
 #habilidades {
   height: 100vh;
   width: 100%;
   padding: 4rem 2rem;
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
-  flex-direction:column;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -530,7 +524,7 @@ main {
 }
 
 .section-title {
- font-size: 3rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 5rem;
@@ -566,11 +560,10 @@ main {
 }
 
 .skill-card {
- background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(133, 0, 160, 0.2);
   border-radius: 20px;
-
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -582,7 +575,6 @@ main {
   justify-content: center;
   align-items: center;
   place-items: center;
-  
 }
 
 .skill-card:hover {
@@ -591,18 +583,30 @@ main {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-.skill-icon {
-  font-size: 4.5rem; 
-  margin-bottom: 1.2rem; 
-  display: block;
-  width: 80px;
-  height: 80px;
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.2rem auto;
+  margin-bottom: 10px; 
 }
+
+.icon-wrapper svg {
+  width: 50px;   
+  height: 50px;
+  transform: scale(0.8);
+  fill: white;
+}
+
+.html-icon { background-color: #1e90ff; }
+.css-icon { background-color: #9d4edd; }
+.js-icon { background-color: #1e90ff; }
+.c-icon { background-color: #28a745; }
+.git-icon { background-color: #000000; }
+.info-icon { background-color: #0078d4; }
+.figma-icon { background-color: #ff7f00; }
 
 .skill-card h3 {
   font-size: 1.5rem;
