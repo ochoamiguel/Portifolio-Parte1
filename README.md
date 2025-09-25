@@ -57,7 +57,7 @@ Este projeto é de uso educacional, criado como parte da disciplina **Tecnologia
 
 **Miguel Thomas Ochoa - RA: 256203**  
 Turma: [Segundo Semestre de Engenharia da Computação]  
-Email: [miguelthomasochoa@gmail.com]  
+Email: miguelthomasochoa@gmail.com  
 GitHub: [https://github.com/ochoamiguel](https://github.com/ochoamiguel)
 
 ---
