@@ -33,19 +33,19 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 ## 📸 Capturas de Tela
 
 <p align="center">
-  <img alt="\images\Desktop-home.png" src="image">
+  <img alt="home page" src="./images/Desktop-home.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-sobre.png" src="image">
+  <img alt="sobre page" src="\images\Desktop-sobre.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-habilidades.png" src="image">
+  <img alt="habilidades page" src="\images\Desktop-habilidades.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-projetos.png" src="image">
+  <img alt="\projetos page" src="\images\Desktop-projetos.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-contato.png" src="image">
+  <img alt="contato page" src="\images\Desktop-contato.png">
 </p>
 
 
