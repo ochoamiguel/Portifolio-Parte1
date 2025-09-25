@@ -30,22 +30,29 @@ Esta é a Parte 1 do meu projeto desenvolvido durante o curso **Tecnologia Web -
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/M9zZBDFBjXYgHoWbT6zTTN/Portifólio?node-id=0-1&p=f&t=1Uj9BKpUWliYt5WZ-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
+## 🔗 Acesso ao Projeto
+
+- **GitHub Pages:** [Clique aqui para acessar o site](https://ochoamiguel.github.io/Portifolio-Parte1/)
+- **Repositório GitHub:** [Acesse o código-fonte aqui](https://github.com/ochoamiguel/Portifolio-Parte1)
+
+---
+
 ## 📸 Capturas de Tela
 
 <p align="center">
-  <img alt="\images\Desktop-home.png" src="image">
+  <img alt="home page" src="./images/Desktop-home.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-sobre.png" src="image">
+  <img alt="sobre page" src="\images\Desktop-sobre.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-habilidades.png" src="image">
+  <img alt="habilidades page" src="\images\Desktop-habilidades.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-projetos.png" src="image">
+  <img alt="\projetos page" src="\images\Desktop-projetos.png">
 </p>
 <p align="center">
-  <img alt="\images\Desktop-contato.png" src="image">
+  <img alt="contato page" src="\images\Desktop-contato.png">
 </p>
 
 
@@ -57,7 +64,7 @@ Este projeto é de uso educacional, criado como parte da disciplina **Tecnologia
 
 **Miguel Thomas Ochoa - RA: 256203**  
 Turma: [Segundo Semestre de Engenharia da Computação]  
-Email: [miguelthomasochoa@gmail.com]  
+Email: miguelthomasochoa@gmail.com  
 GitHub: [https://github.com/ochoamiguel](https://github.com/ochoamiguel)
 
 ---
