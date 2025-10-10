@@ -37,24 +37,22 @@ nav {
   width: 100%;
   background-color: rgba(31, 31, 31, 0.8);
   z-index: 1000;
-  padding: 25px 20px;
+  padding: 25px clamp(20px, 5vw, 100px); /* padding responsivo */
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  padding-right: 200px;
   backdrop-filter: blur(10px);
 }
 
 .logo {
-  font-size: 20px;
+  font-size: clamp(24px, 4vw, 32px); /* tamanho de fonte responsivo */
   font-weight: 600;
   background: linear-gradient(90deg, #1a8ec5 15%, #3db9f3 45%, #99dcfb 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 32px;
-  padding-left: 300px;
+  padding-left: clamp(20px, 8vw, 150px); /* padding responsivo */
 }
 
 .logo:hover {
@@ -65,7 +63,8 @@ nav {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: clamp(15px, 3vw, 30px); /* gap responsivo */
+  padding-right: clamp(20px, 5vw, 100px); /* padding responsivo */
 }
 
 .nav-menu li {
@@ -77,7 +76,7 @@ nav {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px); 
 }
 
 .nav-menu a:hover {
@@ -96,13 +95,14 @@ main {
 
 .hero {
   max-width: 600px;
+  padding: 0 20px; 
 }
 
 .hero h1 {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.1;
-  font-size: 70px;
+  font-size: clamp(40px, 8vw, 70px); 
 }
 
 .hero h1 .highlight {
@@ -114,7 +114,7 @@ main {
 
 .hero h1 .secondary {
   color: white;
-  font-size: 70px;
+  font-size: clamp(40px, 8vw, 70px); 
 }
 
 .buttons {
@@ -122,6 +122,7 @@ main {
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
+  flex-wrap: wrap; 
 }
 
 .btn {
@@ -129,27 +130,20 @@ main {
   border-radius: 20px;
   text-decoration: none;
   font-weight: 400;
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 24px);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  width: 220px;
+  width: clamp(180px, 40vw, 220px); 
   text-align: center;
   justify-content: center;
 }
 
 .btn-primary {
-  background: linear-gradient(
-    135deg,
-    #1e74d7 0%,
-    #7d6dec 28%,
-    #9f5be9 100%,
-    #826cf0 98%
-  );
+  background: linear-gradient(135deg, #1e74d7 0%, #7d6dec 28%, #9f5be9 100%, #826cf0 98%);
   color: white;
   border: none;
- 
 }
 
 .btn-primary:hover {
@@ -161,7 +155,6 @@ main {
   background: transparent;
   color: #aa71e8;
   border: 2px solid #aa71e8;
-  
 }
 
 .btn-secondary:hover {
@@ -175,20 +168,18 @@ main {
 .buttons a svg {
   vertical-align: middle;
   margin-right: 8px;
-  width: 30px;
-  height: 30px;
+  width: clamp(24px, 4vw, 30px); 
+  height: clamp(24px, 4vw, 30px); 
   fill: currentColor;
 }
-
-
 
 /*        SOBRE         */
 
 #sobre {
-  height: 100vh;
+  min-height: 100vh; 
   width: 100%;
   padding: 4rem 2rem;
-  background-image: url("./images/Projetos\ \(1\).png");
+  background-image: url("images/Sobre.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,7 +196,7 @@ main {
 }
 
 .sobre-page-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); 
   font-weight: 700;
   text-align: center;
   background: linear-gradient(135deg, #64b5f6 0%, #bb86fc 100%);
@@ -233,6 +224,7 @@ main {
   grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
   align-items: start;
+  margin-top: 3rem; 
 }
 
 /* Lado esquerdo */
@@ -244,8 +236,8 @@ main {
 }
 
 .sobre-profile-photo {
-  width: 200px;
-  height: 200px;
+  width: clamp(150px, 20vw, 200px); 
+  height: clamp(150px, 20vw, 200px); 
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid rgba(255, 255, 255, 0.2);
@@ -271,7 +263,7 @@ main {
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 20px); 
 }
 
 .sobre-btn-curriculum:hover {
@@ -280,8 +272,8 @@ main {
 }
 
 .sobre-btn-curriculum-svg {
-  width: 30px;
-  height: 30px;
+  width: clamp(24px, 3vw, 30px); 
+  height: clamp(24px, 3vw, 30px); 
 }
 
 .sobre-education-section {
@@ -295,7 +287,7 @@ main {
 }
 
 .sobre-education-title {
-  font-size: 32px;
+  font-size: clamp(24px, 4vw, 32px); 
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -315,7 +307,7 @@ main {
 }
 
 .sobre-education-text {
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px); 
   line-height: 1.4;
   text-align: justify;
   padding-left: 20px;
@@ -328,9 +320,10 @@ main {
 
 .sobre-icon {
   color: #9f5be9;
-  width: 32px;
-  height: 32px;
+  width: clamp(24px, 3vw, 32px); 
+  height: clamp(24px, 3vw, 32px); 
   margin-left: 20px;
+  flex-shrink: 0; 
 }
 
 /* Lado direito */
@@ -339,9 +332,9 @@ main {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 10px;
+  padding: 2rem; 
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  margin-top: 80px;
+  margin-top: 0; 
 }
 
 .sobre-intro-text {
@@ -354,7 +347,7 @@ main {
 }
 
 .sobre-intro-description {
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px); 
   line-height: 1.6;
 }
 
@@ -380,17 +373,20 @@ main {
 
 .sobre-icon-right {
   color: #9f5be9;
-  width: 32px;
-  height: 32px;
+  width: clamp(24px, 3vw, 32px); 
+  height: clamp(24px, 3vw, 32px); 
+  flex-shrink: 0; 
 }
+
 .sobre-icon-right-s {
   color: #9f5be9;
-  width: 64px;
-  height: 64px;
+  width: clamp(48px, 6vw, 64px); 
+  height: clamp(48px, 6vw, 64px); 
+  flex-shrink: 0; 
 }
 
 .sobre-info-text {
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px); 
   line-height: 1.5;
 }
 
@@ -400,13 +396,10 @@ main {
   margin-bottom: 0.3rem;
 }
 
-
-
-
 /*        Habilidades         */
 
 #habilidades {
-  height: 100vh;
+  min-height: 100vh; 
   width: 100%;
   padding: 4rem 2rem;
   background-color: rgb(28, 28, 30);
@@ -421,7 +414,7 @@ main {
 }
 
 .habilidades-container {
-  width: 100vh;
+  width: 100%; 
   margin: 0 auto;
 }
 
@@ -432,7 +425,7 @@ main {
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); /* tamanho responsivo */
   font-weight: 700;
   text-align: center;
   margin-bottom: 5rem;
@@ -457,14 +450,15 @@ main {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* grid responsivo */
   gap: 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+  justify-items: center; /* centraliza os cards */
 }
 
 .skills-grid .skill-card:nth-child(7) {
-  grid-column: 2;
+  grid-column: auto; /* removido posicionamento fixo */
 }
 
 .skill-card {
@@ -476,13 +470,13 @@ main {
   transition: all 0.3s ease;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   min-height: 180px;
-  padding: 0rem 8rem;
-  width: 8rem;
+  padding: 2rem 1.5rem; /* padding corrigido */
+  width: 100%; /* largura responsiva */
+  width: 250px; /* largura máxima */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  place-items: center;
 }
 
 .skill-card:hover {
@@ -492,46 +486,60 @@ main {
 }
 
 .icon-wrapper {
-  width: 60px;
-  height: 60px;
+  width: clamp(50px, 8vw, 60px); /* tamanho responsivo */
+  height: clamp(50px, 8vw, 60px); /* tamanho responsivo */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .icon-wrapper svg {
-  width: 50px;   
-  height: 50px;
+  width: clamp(40px, 6vw, 50px); /* tamanho responsivo */
+  height: clamp(40px, 6vw, 50px); /* tamanho responsivo */
   transform: scale(0.8);
   fill: white;
 }
 
-.html-icon { background-color: #1e90ff; }
-.css-icon { background-color: #9d4edd; }
-.js-icon { background-color: #1e90ff; }
-.c-icon { background-color: #28a745; }
-.git-icon { background-color: #000000; }
-.info-icon { background-color: #0078d4; }
-.figma-icon { background-color: #ff7f00; }
+.html-icon {
+  background-color: #1e90ff;
+}
+.css-icon {
+  background-color: #9d4edd;
+}
+.js-icon {
+  background-color: #1e90ff;
+}
+.c-icon {
+  background-color: #28a745;
+}
+.git-icon {
+  background-color: #000000;
+}
+.info-icon {
+  background-color: #0078d4;
+}
+.figma-icon {
+  background-color: #ff7f00;
+}
 
 .skill-card h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* tamanho responsivo */
   font-weight: 600;
   color: white;
   margin: 0;
 }
 
 .skill-card small {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* tamanho responsivo */
   color: #bb86fc;
   font-weight: 400;
 }
 
 #projetos {
   min-height: 100vh;
-  background-image: url(./images/Projetos\ \(1\).png);
+  background-image: url(./images/Projetos\ $$1$$.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 20px;
@@ -547,7 +555,7 @@ main {
 }
 
 .projetos-title {
- font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); /* tamanho responsivo */
   font-weight: 700;
   text-align: center;
   margin-bottom: 5rem;
@@ -559,7 +567,7 @@ main {
 }
 
 .projetos-title::after {
-   content: "";
+  content: "";
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -572,7 +580,7 @@ main {
 
 .projetos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); /* grid mais responsivo */
   gap: 40px;
   justify-items: center;
 }
@@ -623,14 +631,14 @@ main {
 }
 
 .projetos-card-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* tamanho responsivo */
   font-weight: 600;
   color: white;
   margin-bottom: 15px;
 }
 
 .projetos-card-description {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem); /* tamanho responsivo */
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
 }
@@ -662,7 +670,7 @@ main {
 }
 
 .contato-title {
-   font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); /* tamanho responsivo */
   font-weight: 700;
   text-align: center;
   margin-bottom: 5rem;
@@ -674,7 +682,7 @@ main {
 }
 
 .contato-title::after {
-   content: "";
+  content: "";
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -691,14 +699,14 @@ main {
 }
 
 .contato-subtitle p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem); /* tamanho responsivo */
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 8px;
 }
 
 .contato-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); /* grid mais responsivo */
   gap: 40px;
   margin-bottom: 60px;
   max-width: 800px;
@@ -727,8 +735,8 @@ main {
 }
 
 .contato-icon {
-  width: 60px;
-  height: 60px;
+  width: clamp(50px, 8vw, 60px); /* tamanho responsivo */
+  height: clamp(50px, 8vw, 60px); /* tamanho responsivo */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -737,23 +745,23 @@ main {
 }
 
 .email-icon {
-  background: linear-gradient(90deg, #9030F8, #9685F4, #3379C9, #306BDF);
+  background: linear-gradient(90deg, #9030f8, #9685f4, #3379c9, #306bdf);
 }
 
 .phone-icon {
-  background: linear-gradient(90deg, #9030F8, #9685F4, #3379C9, #306BDF);
+  background: linear-gradient(90deg, #9030f8, #9685f4, #3379c9, #306bdf);
 }
 
 .contato-icon svg {
   color: white;
-  width: 30px;
-  height: 30px;
+  width: clamp(24px, 4vw, 30px); /* tamanho responsivo */
+  height: clamp(24px, 4vw, 30px); /* tamanho responsivo */
 }
 
 .social-link svg {
   color: white;
-  width: 30px;
-  height: 30px;
+  width: clamp(24px, 4vw, 30px); /* tamanho responsivo */
+  height: clamp(24px, 4vw, 30px); /* tamanho responsivo */
 }
 
 .contato-info {
@@ -761,13 +769,13 @@ main {
 }
 
 .contato-info h3 {
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 2vw, 1.3rem); /* tamanho responsivo */
   font-weight: 600;
   margin-bottom: 5px;
 }
 
 .contato-info p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem); /* tamanho responsivo */
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -775,11 +783,12 @@ main {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* permite quebra de linha */
 }
 
 .social-link {
-  width: 60px;
-  height: 60px;
+  width: clamp(50px, 8vw, 60px); /* tamanho responsivo */
+  height: clamp(50px, 8vw, 60px); /* tamanho responsivo */
   border-radius: 50%;
   background: rgba(30, 30, 30, 0.8);
   display: flex;
@@ -812,13 +821,13 @@ main {
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); /* grid mais responsivo */
   gap: 40px;
   margin-bottom: 30px;
 }
 
 .footer-brand h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* tamanho responsivo */
   font-weight: 600;
   color: #60a5fa;
   margin-bottom: 8px;
@@ -826,12 +835,12 @@ main {
 
 .footer-brand p {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* tamanho responsivo */
 }
 
 .footer-contact h4,
 .footer-social h4 {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem); /* tamanho responsivo */
   font-weight: 600;
   margin-bottom: 15px;
   color: white;
@@ -843,18 +852,19 @@ main {
   gap: 10px;
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* tamanho responsivo */
 }
 
 .footer-contact-item svg {
   color: #60a5fa;
+  flex-shrink: 0; /* previne encolhimento */
 }
 
 .footer-social-links {
   display: flex;
   gap: 15px;
   justify-content: center;
-  
+  flex-wrap: wrap; /* permite quebra de linha */
 }
 
 .footer-social-link {
@@ -868,12 +878,11 @@ main {
   color: white;
   text-decoration: none;
   transition: background 0.3s ease;
-  
 }
 
 .footer-social-link svg {
-  width: 30px;
-  height: 30px;
+  width: clamp(24px, 4vw, 30px); /* tamanho responsivo */
+  height: clamp(24px, 4vw, 30px); /* tamanho responsivo */
 }
 
 .footer-social-link:hover {
@@ -888,51 +897,15 @@ main {
 
 .footer-bottom p {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); /* tamanho responsivo */
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-  .contato-hero {
-    padding: 60px 15px;
-  }
-
-  .contato-title {
-    font-size: 2.5rem;
-  }
-
-  .contato-subtitle p {
-    font-size: 1.1rem;
-  }
-
-  .contato-cards {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .contato-card {
-    padding: 25px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .contato-info {
-    text-align: center;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    text-align: center;
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
-
-
-
-
-/* --------------------------- */
-/*        RESPONSIVO          */
-/* --------------------------- */
 
 @media (max-width: 1024px) {
   .logo {
@@ -941,6 +914,10 @@ main {
 
   nav {
     padding-right: clamp(1rem, 5vw, 3rem);
+  }
+
+  .nav-menu {
+    padding-right: 0; /* removido padding duplicado */
   }
 }
 
@@ -972,15 +949,12 @@ main {
 
   #sobre,
   #habilidades {
-    height: auto;
-    min-height: 100vh;
     padding: clamp(6rem, 12vw, 8rem) clamp(1rem, 4vw, 2rem) clamp(2rem, 6vw, 4rem);
   }
 
   .sobre-container,
   .habilidades-container {
     display: block;
-    height: auto;
   }
 
   .sobre-container {
@@ -988,18 +962,12 @@ main {
   }
 
   .sobre-page-title {
-    font-size: clamp(1.75rem, 6vw, 2.5rem);
     margin-bottom: 2rem;
   }
 
   .sobre-content {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .sobre-profile-photo {
-    width: clamp(6rem, 20vw, 9.375rem);
-    height: clamp(6rem, 20vw, 9.375rem);
   }
 
   .sobre-education-section,
@@ -1030,23 +998,12 @@ main {
     gap: 1.5rem;
   }
 
-  .skills-grid .skill-card:nth-child(7) {
-    grid-column: span 2;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
   .section-title {
-    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
 
   .skill-card {
     padding: 1.5rem 1rem;
-  }
-
-  .skill-card h3 {
-    font-size: 1.2rem;
   }
 
   .buttons {
@@ -1058,18 +1015,55 @@ main {
   .btn {
     width: clamp(12rem, 80vw, 18rem);
   }
+
+  .contato-hero {
+    padding: 60px 15px;
+  }
+
+  .contato-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contato-card {
+    padding: 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contato-info {
+    text-align: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  #projetos {
+    padding: 60px 15px;
+  }
+
+  .projetos-title {
+    margin-bottom: 40px;
+  }
+
+  .projetos-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .projetos-card {
+    max-width: 100%;
+  }
+
+  .projetos-card-content {
+    padding: 25px;
+  }
 }
 
 @media (max-width: 480px) {
-  .sobre-page-title {
-    font-size: 2rem;
-  }
-
-  .sobre-profile-photo {
-    width: clamp(5rem, 25vw, 7.5rem);
-    height: clamp(5rem, 25vw, 7.5rem);
-  }
-
   .sobre-education-section,
   .sobre-right-section {
     padding: 1rem;
@@ -1077,7 +1071,6 @@ main {
 
   .sobre-btn-curriculum {
     padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
   }
 
   .skills-grid {
@@ -1085,33 +1078,21 @@ main {
     gap: 1rem;
   }
 
-  
-
-  .section-title {
-    font-size: 2rem;
-  }
-
   .skill-card {
     padding: 1.2rem 0.8rem;
     max-width: 100%;
   }
 
-  .hero h1 {
-    font-size: clamp(2rem, 8vw, 2.5rem);
+  .projetos-card-image {
+    height: 200px;
   }
 
-  .hero h1 .secondary {
-    font-size: clamp(2rem, 8vw, 2.5rem);
-  }
-
-  .btn {
-    font-size: clamp(1rem, 4vw, 1.25rem);
-    padding: clamp(0.75rem, 3vw, 1rem);
+  .projetos-card-content {
+    padding: 20px;
   }
 }
 
 @media (min-width: 1200px) {
-
   .skills-grid {
     max-width: 1000px;
     grid-template-columns: repeat(3, 1fr);
@@ -1135,50 +1116,4 @@ main {
 .sobre-btn-curriculum:focus {
   outline: 2px solid #64b5f6;
   outline-offset: 2px;
-}
-
-@media (max-width: 768px) {
-  #projetos {
-    padding: 60px 15px;
-  }
-
-  .projetos-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-
-  .projetos-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .projetos-card {
-    max-width: 100%;
-  }
-
-  .projetos-card-content {
-    padding: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  .projetos-title {
-    font-size: 2rem;
-  }
-
-  .projetos-card-image {
-    height: 200px;
-  }
-
-  .projetos-card-content {
-    padding: 20px;
-  }
-
-  .projetos-card-title {
-    font-size: 1.3rem;
-  }
-
-  .projetos-card-description {
-    font-size: 0.9rem;
-  }
 }
