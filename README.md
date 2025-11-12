@@ -1,4 +1,4 @@
-<h1 align="center"> Portifólio-Parte 1 </h1>
+<h1 align="center"> Portifólio-Final </h1>
 
 <p align="center">
 Projeto desevolvido por Miguel Ochoa. 
@@ -18,13 +18,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML5
 - CSS3 + Flexbox
+- JavaScript
 - Git e Github
 - Figma
 - Github Pages
 
 ## 💻 Projeto
 
-Esta é a Parte 1 do meu projeto desenvolvido durante o curso **Tecnologia Web - Engenharia da Computação (Front-End)**. Trata-se de um site de portfólio pessoal com informações sobre mim, meus projetos e formas de contato.
+Este é meu projeto desenvolvido durante o curso **Tecnologia Web - Engenharia da Computação (Front-End)**. Trata-se de um site de portfólio pessoal com informações sobre mim, meus projetos e formas de contato.
 
 ## 🔖 Layout
 
